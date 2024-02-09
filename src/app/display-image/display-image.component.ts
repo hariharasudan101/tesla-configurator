@@ -19,7 +19,7 @@ export class DisplayImageComponent {
   }
 
   get isModelSelected(): boolean {
-    return this.modelService.isModelSelected;
+    return this.modelService.selectedModel? true: false;
   }
 
   get src(): string {

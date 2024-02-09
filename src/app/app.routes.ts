@@ -12,10 +12,10 @@ export const routes: Routes = [
         path: 'model', component: ModelSelectionComponent
     },
     {
-        path: 'config', component: ConfigSelectionComponent, canActivate: [() => inject(ModelService).isModelSelected]
+        path: 'config', component: ConfigSelectionComponent, canActivate: [() => inject(ModelService).canActivateConfig()]
     },
     {
-        path: 'summary', component: SummaryComponent, canActivate: [() => inject(ModelService).isModelSelected]
+        path: 'summary', component: SummaryComponent, canActivate: [() => inject(ModelService).canActivateSummary()]
     },
     {
         path: '', component: ModelSelectionComponent

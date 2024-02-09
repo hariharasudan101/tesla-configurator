@@ -38,6 +38,8 @@ export class ConfigSelectionComponent implements OnInit{
         this.modelService.selectedConfig = this.modelService.selectedConfig??this.config[0];
       }
     );
+    this.configForm.controls.towHitch.setValue(this.modelService.towHitchOpted??false);
+    this.configForm.controls.yoke.setValue(this.modelService.yokeOpted??false);
   }
 
   get selectedConfig() {
@@ -77,4 +79,5 @@ export class ConfigSelectionComponent implements OnInit{
     return selectedConfig ? selectedConfig.price : -1; 
   }
 
+ 
 }

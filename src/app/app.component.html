@@ -1,7 +1,13 @@
+<style>
+  button.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+</style>
 <nav>
-  <button type="menu" routerLink="/model" routerLinkActive="active" ariaCurrentWhenActive="page" id="step1">Step 1</button>
-  <button type="menu" routerLink="/config" routerLinkActive="active" ariaCurrentWhenActive="page" id="step2">Step 2</button>
-  <button type="menu" routerLink="/summary" routerLinkActive="active" ariaCurrentWhenActive="page" id="step3">Step 3</button>
+  <button type="button" routerLink="/model" id="step1">Step 1</button>
+  <button type="button" routerLink="/config" id="step2">Step 2</button>
+  <button type="button" routerLink="/summary" routerLinkActive="active" ariaCurrentWhenActive="page" id="step3">Step 3</button>
 </nav>
 <router-outlet></router-outlet>
 <app-display-image></app-display-image>

@@ -30,8 +30,14 @@ export class ModelService {
     return this.http.get<Configs>('/options/'+this.selectedModel?.code);
   }
 
-  get isModelSelected(): boolean {
+  canActivateConfig(): boolean {
     return this.selectedModel? true : false && this.selectedColor? true : false;
+  }
+
+  canActivateSummary(): boolean {
+    return this.selectedModel? true : false && 
+    this.selectedColor? true : false && 
+    this.selectedConfig? true : false;
   }
 
   get isConfigSelected(): boolean {
