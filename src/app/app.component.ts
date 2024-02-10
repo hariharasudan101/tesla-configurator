@@ -14,6 +14,6 @@ import { DisplayImageComponent } from './display-image/display-image.component';
 })
 export class AppComponent {
   name = 'Angular';
-  title = 'Angular';
+  title = 'tesla-configurator';
 
 }

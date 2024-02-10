@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ModelService } from '../model.service';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-display-image',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
   templateUrl: './display-image.component.html',
   styleUrl: './display-image.component.scss'
 })

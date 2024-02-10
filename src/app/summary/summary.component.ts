@@ -4,11 +4,12 @@ import { Model } from '../type/model.type';
 import { Config } from '../type/config.type';
 import { Color } from '../type/color.type';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-summary',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,HttpClientModule],
   templateUrl: './summary.component.html',
   styleUrl: './summary.component.scss'
 })

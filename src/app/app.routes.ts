@@ -15,7 +15,7 @@ export const routes: Routes = [
         path: 'config', component: ConfigSelectionComponent, canActivate: [() => inject(ModelService).canActivateConfig()]
     },
     {
-        path: 'summary', component: SummaryComponent, canActivate: [() => inject(ModelService).canActivateSummary()]
+        path: 'summary', component: SummaryComponent,  canActivate: [() => inject(ModelService).canActivateSummary()]
     },
     {
         path: '', component: ModelSelectionComponent
