@@ -9,7 +9,7 @@
         <span *ngIf="configForm.controls.configSelect.value">
             Range: {{ getRange(configForm.controls.configSelect.value)}} miles -
             Max speed: {{ getSpeed(configForm.controls.configSelect.value) }} -
-            Cost: {{ getPrice(configForm.controls.configSelect.value) | currency }} 
+            Cost: {{ getPrice(configForm.controls.configSelect.value) | currency }}
         </span>
     </div>
     <div *ngIf="towHitch" (change)="onTowHitchChange()">

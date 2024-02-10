@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, signal } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Model } from './type/model.type';
-import { Observable, Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Configs } from './type/configs.type';
 import { Config } from './type/config.type';
 import { Color } from './type/color.type';
